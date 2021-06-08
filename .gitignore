@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ignore everything in the root except the "wp-content" directory.
 !wp-content/
 
@@ -12,7 +13,7 @@ wp-content/*
 wp-content/plugins/hello.php
 
 # ignore specific themes
-wp-content/themes/twenty*/
+wp-content/themes/amely*/
 
 # ignore node dependency directories
 node_modules/
@@ -21,3 +22,34 @@ node_modules/
 *.log
 *.sql
 *.sqlite
+
+# ignore variable envairoment
+.env
+=======
+# ignore everything in the root except the "wp-content" directory.
+!wp-content/
+
+# ignore everything in the "wp-content" directory, except:
+# "mu-plugins", "plugins", "themes" directory
+wp-content/*
+!wp-content/mu-plugins/
+!wp-content/plugins/
+!wp-content/themes/
+
+# ignore these plugins
+wp-content/plugins/hello.php
+
+# ignore specific themes
+wp-content/themes/amely*/
+
+# ignore node dependency directories
+node_modules/
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore variable envairoment
+.env
+>>>>>>> 2cde2ccc3e74d788dfef57caf51afdaecaace17c
